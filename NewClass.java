@@ -39,7 +39,7 @@ public class NewClass extends JFrame {
         showPathButton = new JButton("Show Path");
         showPathButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                showPath = true;                        // Set the flag to true when the button is clicked
+                showPath = !showPath;                        // Set the flag to true when the button is clicked
                 repaint();                               // Trigger the repaint to show the path
             }
         });
